@@ -42,7 +42,7 @@ collections:
       - name: "adminCode"
         label: "Administration Responsible for this Code"
         widget: "relation"
-        collection: "administration"
+        collection: "administrations"
         searchFields: ["name_en", "name_fr"]
         valueField: "code"
         displayFields: ["name_en"]
@@ -52,15 +52,19 @@ collections:
       - name: "contactName"
         label: "Contact Name"
         widget: "string"
+        required: false
       - name: "contactPhone"
-        label: "Contact Email"
+        label: "Contact Phone Number"
         widget: "string"
+        required: false
       - name: "contactURL_en"
         label: "English Contact URL"
         widget: "string"
+        required: false
       - name: "contactURL_fr"
         label: "French Contact URL"
         widget: "string"
+        required: false
       - name: "created"
         label: "Created Date"
         widget: "date"
@@ -69,6 +73,7 @@ collections:
         label: "Last Modified"
         widget: "date"
         format: "YYYY-MM-DD"
+        required: false
       - name: "metadataLastUpdated"
         label: "Last Time This Form Was Filled Out"
         widget: "date"
@@ -82,15 +87,19 @@ collections:
       - name: "downloadURL_en"
         label: "English Download URL"
         widget: "string"
+        required: false
       - name: "downloadURL_fr"
         label: "French Download URL"
         widget: "string"
+        required: false
       - name: "homepageURL_en"
         label: "English Homepage URL"
         widget: "string"
+        required: false
       - name: "homepageURL_fr"
         label: "French Homepage URL"
         widget: "string"
+        required: false
       - name: "languages"
         label: "Languages"
         widget: "list"
@@ -103,11 +112,11 @@ collections:
       - name: "partners"
         label: "Partners"
         widget: "list"
-        field:
+        fields:
           - name: "partnerCode"
             label: "Partner"
             widget: "relation"
-            collection: "administration"
+            collection: "administrations"
             searchFields: ["name_en", "name_fr"]
             valueField: "code"
             displayFields: ["name_en"]
@@ -116,9 +125,9 @@ collections:
         widget: "list"
         allow_add: true
         fields: 
-          - {label: "url_en", name: "English URL", widget: "string"}
-          - {label: "url_fr", name: "French URL", widget: "string"}
-          - {label: "spdxID", name: "License Type (MIT, GPL, etc)", widget: "string"}
+          - {name: "url_en", label: "English URL", widget: "string"}
+          - {name: "url_fr", label: "French URL", widget: "string"}
+          - {name: "spdxID", label: "License Type (MIT, GPL, etc)", widget: "string"}
       - name: "repoURL_en"
         label: "English Repository URL"
         widget: "string"
@@ -141,10 +150,13 @@ collections:
       - name: "vcs"
         label: "Version Control System"
         widget: "string"
+        required: false
       - name: "status"
         label: "Status of the project"
         widget: "select"
         options: ["Alpha", "Beta", "Maintained", "Deprecated", "Retired"]
+        required: false
       - name: "version"
         label: "Version"
         widget: "string"
+        required: false
