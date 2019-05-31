@@ -1,0 +1,28 @@
+adminCode: "edmonton_ab"
+contactEmail: "jared.rewerts@edmonton.ca"
+contactName: "Jared Rewerts"
+contactPhone: "780-667-8058"
+contactURL_en: "https://github.com/yeg-relief/youcanbenefit/issues"
+contactURL_fr: "https://github.com/yeg-relief/youcanbenefit/issues"
+created: "2016-06-16"
+lastModified: "2019-05-28"
+description_en: "YouCanBenefit is a web application that increases social benefit program discoverability for people of lesser means and their allies."
+description_fr: "YouCanBenefit est une application Web qui augmente la découvrabilité des programmes d''avantages sociaux pour les personnes moins fortunées et leurs alliés."
+name_en: "YouCanBenefit"
+name_fr: "YouCanBenefit"
+licenses:
+  - url_en: "https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE"
+    url_fr: "https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE"
+    spdxID: "MIT"
+repoURL_en: "https://github.com/yeg-relief/youcanbenefit"
+repoURL_fr: "https://github.com/yeg-relief/youcanbenefit"
+tags_en:
+  - "Social Benefits"
+tags_fr:
+  - "Avantages Sociaux"
+vcs: "git"
+languages:
+  - "JavaScript"
+  - "TypeScript"
+status: "Maintained"
+version: "1.0.91"
