@@ -15,10 +15,8 @@ name_en: Accumulo
 name_fr: Accumulo
 tags_en:
   - Application
-  - ''
 tags_fr:
   - Application
-  - ''
 administrations:
   - adminCode: mtl_qc
     uses:
