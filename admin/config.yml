@@ -38,7 +38,7 @@ collections:
             widget: "string"
   - name: "oss"
     label: "Open Source Software"
-    folder: "_data/oss"
+    folder: "_data/logiciels_libres-open_source_software"
     extension: "yml"
     identifier_field: "name_en"
     create: true
