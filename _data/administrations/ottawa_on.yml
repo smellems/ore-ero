@@ -1,6 +1,5 @@
 code: "ottawa_on"
 parent: "on"
 order: "Municipal"
-name:
-  en: "City of Ottawa"
-  fr: "Ville d'Ottawa"
+name_en: "City of Ottawa"
+name_fr: "Ville d'Ottawa"

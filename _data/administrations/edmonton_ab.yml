@@ -1,6 +1,5 @@
-code: "edmonton_ab"
-parent: "ab"
-order: "Municipal"
-name:
-  en: "City of Edmonton"
-  fr: "Ville d'Edmonton"
+code: edmonton_ab
+order: Municipal
+parent: ab
+name_en: City of Edmonton
+name_fr: Ville d'Edmonton
