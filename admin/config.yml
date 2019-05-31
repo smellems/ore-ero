@@ -8,7 +8,7 @@ collections:
     label: "Administrations"
     folder: "_data/administrations"
     extension: yml
-    identifier_field: "code"
+    summary: "{{name_en}}"
     create: true
     fields:
       - name: "code"
@@ -23,16 +23,12 @@ collections:
         label: "Parent Organization"
         widget: "relation"
         collection: "administrations"
-        searchFields: ["name.en", "name.fr"]
+        searchFields: ["name_en", "name_fr"]
         valueField: "code"
-        displayFields: ["name.en", "name.fr"]
-      - name: "name"
-        label: "Name"
-        widget: "object"
-        fields:
-          - name: "en"
-            label: "English"
-            widget: "string"
-          - name: "fr"
-            label: "French"
-            widget: "string"
+        displayFields: ["name_en"]
+      - name: "name_en"
+        label: "English Name"
+        widget: "string"
+      - name: "name_fr"
+        label: "French Name"
+        widget: "string"
