@@ -1,11 +1,14 @@
 backend:
   name: github
   repo: j-rewerts/ore-ero
+  branch: netlify
 media_folder: "assets/uploads"
 collections:
   - name: "administrations"
     label: "Administrations"
     folder: "_data/administrations"
+    extension: yml
+    identifier_field: "code"
     create: true
     fields:
       - name: "code"
@@ -16,6 +19,7 @@ collections:
         widget: "select"
         options: ["Municipal", "Provincial", "Federal"]
       - name: "parent"
+        required: false
         label: "Parent Organization"
         widget: "relation"
         collection: "administrations"
@@ -24,6 +28,7 @@ collections:
         displayFields: ["name.en", "name.fr"]
       - name: "name"
         label: "Name"
+        widget: "object"
         fields:
           - name: "en"
             label: "English"
