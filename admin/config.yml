@@ -141,6 +141,7 @@ collections:
         searchFields: ["name_en", "name_fr"]
         valueField: "name_en"
         displayFields: ["name_en", "name_fr"]
+        required: false
       - name: "tags_en"
         label: "English Tags"
         widget: "list"
