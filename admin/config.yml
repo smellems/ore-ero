@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: j-rewerts/ore-ero
+media_folder: "assets/uploads"
+collections:
+  - name: "administrations"
+    label: "Administrations"
+    folder: "_data/administrations"
+    create: true
+    fields:
+      - name: "code"
+        label: "Code"
+        widget: "string"
+      - name: "order"
+        label: "Order"
+        widget: "select"
+        options: ["Municipal", "Provincial", "Federal"]
+      - name: "parent"
+        label: "Parent Organization"
+        widget: "relation"
+        collection: "administrations"
+        searchFields: ["name.en", "name.fr"]
+        valueField: "code"
+        displayFields: ["name.en", "name.fr"]
+      - name: "name"
+        label: "Name"
+        fields:
+          - name: "en"
+            label: "English"
+            widget: "string"
+          - name: "fr"
+            label: "French"
+            widget: "string"
