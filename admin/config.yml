@@ -60,7 +60,7 @@ collections:
         widget: "string"
       - name: "licenses"
         label: "Licenses"
-        widget: "object"
+        widget: "list"
         fields:
           - name: "URL_en"
             label: "English URL"
@@ -85,14 +85,14 @@ collections:
         widget: "list"
       - name: "administrations"
         label: "Administrations"
-        widget: "object"
+        widget: "list"
         fields:
           - name: "adminCode"
             label: "Admin Code"
             widet: "string"
           - name: uses
             label: "Uses"
-            widget: "object"
+            widget: "list"
             fields:
               - name: "contact"
                 label: "Contact"
@@ -163,10 +163,3 @@ collections:
                 label: "Users"
                 widget: "string"
                 required: false
-
-
-
-
-
-
-
