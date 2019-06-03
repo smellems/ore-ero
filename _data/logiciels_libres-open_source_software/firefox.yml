@@ -1,0 +1,28 @@
+description_en: Web browser developed by Mozilla Foundation
+description_fr: Navigateur Web développé par la Fondation Mozilla
+homepageURL_en: 'https://www.mozilla.org/en-US/firefox/'
+homepageURL_fr: 'https://www.mozilla.org/fr/firefox/'
+licenses:
+  - URL_en: 'https://www.mozilla.org/en-US/MPL/2.0/FAQ/'
+    URL_fr: 'https://www.mozilla.org/en-US/MPL/2.0/FAQ/'
+    spdxID: MPL-2.0
+name_en: Firefox
+name_fr: Firefox
+tags_en:
+  - Web browser
+  - Desktop
+  - Mobile
+tags_fr:
+  - Navigateur Web
+  - Poste de travail
+  - Mobile
+administrations:
+  - adminCode: pch
+    uses:
+      - contactEmail: sebastien.lemay@canada.ca
+        description_en: Upgraded to latest ESR version every month.
+        description_fr: Mises à jours mensuelles à la dernière version ESR.
+        metadataLastUpdated: 2019-05-13T06:00:00.000Z
+        name_en: Available to all employees (self service)
+        name_fr: Disponible pour tous les employés (libre service)
+        started: 2019-05-06T06:00:00.000Z
