@@ -217,35 +217,27 @@ collections:
             label: "Uses"
             widget: "list"
             fields:
-              - name: "contact"
-                label: "Contact"
-                widget: "object"
-                fields:
-                  - name: "URL_en"
-                    label: "English URL"
-                    widget: "string"
-                    required: false
-                  - name: "URL_fr"
-                    label: "French URL"
-                    widget: "string"
-                    required: false
-                  - name: "email"
-                    label: "Email"
-                    widget: "string"
-                  - name: "name"
-                    label: "Name"
-                    widget: "string"
-                    required: false
-              - name: "date"
-                label: "Date"
-                widget: "object"
-                fields:
-                  - name: "started"
-                    label: "Started"
-                    widget: "date"
-                  - name: "metadataLastUpdated"
-                    label: "Metadata Last Updated"
-                    widget: "date"
+              - name: "contactURL_en"
+                label: "English Contact URL"
+                widget: "string"
+                required: false
+              - name: "contactURL_fr"
+                label: "French Contact URL"
+                widget: "string"
+                required: false
+              - name: "contactEmail"
+                label: "Contact Email"
+                widget: "string"
+              - name: "contactName"
+                label: "Contact Name"
+                widget: "string"
+                required: false
+              - name: "started"
+                label: "Started"
+                widget: "date"
+              - name: "metadataLastUpdated"
+                label: "Metadata Last Updated"
+                widget: "date"
               - name: "description_en"
                 label: "English Description"
                 widget: "string"
@@ -258,26 +250,22 @@ collections:
               - name: "name_fr"
                 label: "French NAme"
                 widget: "string"
-              - name: "relatedCode"
-                label: "Related Code"
-                widget: "object"
-                fields:
-                  - name: "URL_en"
-                    label: "English URL"
-                    widget: "string"
-                    required: false
-                  - name: "URL_fr"
-                    label: "French URL"
-                    widget: "string"
-                    required: false
-                  - name: "name_en"
-                    label: "English Name"
-                    widget: "string"
-                    required: false
-                  - name: "name_fr"
-                    label: "French Name"
-                    widget: "string"
-                    required: false
+              - name: "relatedCodeURL_en"
+                label: "English Related Code URL"
+                widget: "string"
+                required: false
+              - name: "relatedCodeURL_fr"
+                label: "French Related Code URL"
+                widget: "string"
+                required: false
+              - name: "relatedCodeName_en"
+                label: "English Related Code Name"
+                widget: "string"
+                required: false
+              - name: "relatedCodeName_fr"
+                label: "French Related Code Name"
+                widget: "string"
+                required: false
               - name: "status"
                 label: "Status"
                 widget: "string"
