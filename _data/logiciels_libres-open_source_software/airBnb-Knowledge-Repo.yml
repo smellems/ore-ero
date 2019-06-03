@@ -18,8 +18,8 @@ admininstrations:
   - adminCode: mtl_qc
     uses: 
       - contactEmail: "libre@ville.montreal.qc.ca"
-        started: 2019-01-31
-        metadataLastUpdated: 2019-05-06
+        started: 2019-01-31T00:00:00.000Z
+        metadataLastUpdated: 2019-05-06T00:00:00.000Z
         description_en: "Business Intelligence."
         description_fr: "Intelligence d'affaires."
         name_en: "Document Management Software."
