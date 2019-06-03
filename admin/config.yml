@@ -2,6 +2,7 @@ backend:
   name: github
   repo: j-rewerts/ore-ero
   branch: netlify
+  base_url: https://ore-ero-auth.herokuapp.com
 media_folder: "assets/uploads"
 collections:
   - name: "administrations"
