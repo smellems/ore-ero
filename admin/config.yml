@@ -169,9 +169,6 @@ collections:
     identifier_field: "name_en"
     create: true
     fields:
-      - name: "schemaVersion"
-        label: "Schema Version"
-        widget: "string"
       - name: "description_en"
         label: "English Description"
         widget: "string"
