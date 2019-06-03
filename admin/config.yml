@@ -9,6 +9,7 @@ collections:
     folder: "_data/administrations"
     extension: yml
     summary: "{{name_en}}"
+    identifier_field: "code"
     create: true
     fields:
       - name: "code"
