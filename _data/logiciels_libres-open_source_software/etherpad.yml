@@ -1,0 +1,27 @@
+description_en: Edit text documents collaboratively in real-time
+description_fr: Collaboration en temps réel sur des documents textes
+homepageURL_en: 'http://etherpad.org/'
+homepageURL_fr: 'http://etherpad.org/'
+licenses:
+  - URL_en: 'https://github.com/ether/etherpad-lite/blob/develop/LICENSE'
+    URL_fr: 'https://github.com/ether/etherpad-lite/blob/develop/LICENSE'
+    spdxID: Apache-2.0
+name_en: Etherpad
+name_fr: Etherpad
+tags_en:
+  - Collaboration
+  - Text editor
+  - Productivity
+tags_fr:
+  - Collaboration. Éditeur texte
+  - Productivité
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contactEmail: mark.wooff@tbs-sct.gc.ca
+        description_en: Integrated with GCcollab
+        description_fr: Intégré avec GCcollab
+        metadataLastUpdated: 2019-05-13T06:00:00.000Z
+        name_en: GCcollab Docs
+        name_fr: Docs GCcollab
+        started: 2019-05-06T06:00:00.000Z
