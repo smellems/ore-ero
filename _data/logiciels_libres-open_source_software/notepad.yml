@@ -1,0 +1,32 @@
+description_en: Text editor and Notepad replacement that runs in the Windows environment.
+description_fr: >-
+  Éditeur de textes et remplacement pour Notepad qui fonctionne dans
+  l'environement Windows.
+homepageURL_en: 'https://notepad-plus-plus.org'
+homepageURL_fr: 'https://notepad-plus-plus.org/fr'
+licenses:
+  - URL_en: 'https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html'
+    URL_fr: 'https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html'
+    spdxID: GPL-2.0
+name_en: Notepad++
+name_fr: Notepad++
+tags_en:
+  - Desktop
+  - Productivity
+  - Text editor
+tags_fr:
+  - Poste de travail
+  - Productivité
+  - Éditeur texte
+administrations:
+  - adminCode: gac-amc
+    uses:
+      - contactEmail: sebastien.routier@international.gc.ca
+        contactURL_en: 'https://www.international.gc.ca/'
+        contactURL_fr: 'https://www.international.gc.ca/'
+        description_en: Must be requeted from the AppStore.
+        description_fr: Disponible au AppStore.
+        metadataLastUpdated: 2019-05-16T06:00:00.000Z
+        name_en: Available to all employees
+        name_fr: Disponible pour tous les employés
+        started: 2019-05-06T06:00:00.000Z
