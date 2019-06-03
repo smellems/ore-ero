@@ -213,8 +213,12 @@ collections:
         widget: "list"
         fields:
           - name: "adminCode"
-            label: "Admin Code"
-            widet: "string"
+            label: "User"
+            widget: "relation"
+            collection: "administrations"
+            searchFields: ["name_en", "name_fr"]
+            valueField: "code"
+            displayFields: ["name_en"]
           - name: uses
             label: "Uses"
             widget: "list"
