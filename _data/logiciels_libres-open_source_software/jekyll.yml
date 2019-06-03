@@ -1,0 +1,30 @@
+description_en: Transform your plain text into static websites and blogs
+description_fr: Transformez votre texte brut en sites Web et blogs statiques
+homepageURL_en: 'https://jekyllrb.com/'
+homepageURL_fr: 'https://jekyllrb.com/'
+licenses:
+  - URL_en: 'https://github.com/jekyll/jekyll/blob/master/LICENSE'
+    URL_fr: 'https://github.com/jekyll/jekyll/blob/master/LICENSE'
+    spdxID: MIT
+name_en: Jekyll
+name_fr: Jekyll
+tags_en:
+  - Web site
+tags_fr:
+  - Site web
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contactEmail: sebastien.lemay@tbs-sct.gc.ca
+        contactURL_en: 'https://github.com/canada-ca/ore-ero/issues'
+        contactURL_fr: 'https://github.com/canada-ca/ore-ero/issues'
+        description_en: Github Pages
+        description_fr: Pages Github
+        metadataLastUpdated: 2019-05-06T06:00:00.000Z
+        name_en: Open Resource Exchange
+        name_fr: Échange de ressources ouvert
+        relatedCodeURL_en: 'https://github.com/canada-ca/ore-ero'
+        relatedCodeURL_fr: 'https://github.com/canada-ca/ore-ero'
+        started: 2018-01-23T07:00:00.000Z
+        users:
+          - public
