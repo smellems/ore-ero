@@ -1,0 +1,37 @@
+description_en: 'Wiki package written in PHP, originally for use on Wikipedia'
+description_fr: Ensemble Wiki développé à l’origine pour Wikipédia
+homepageURL_en: 'https://www.mediawiki.org/wiki/MediaWiki'
+homepageURL_fr: 'https://www.mediawiki.org/wiki/MediaWiki/fr'
+licenses:
+  - URL_en: 'https://www.mediawiki.org/wiki/Topic:Tg9b5hes4ue3vdix'
+    URL_fr: 'https://www.mediawiki.org/wiki/Topic:Tg9b5hes4ue3vdix'
+    spdxID: GPL-2.0
+name_en: MediaWiki
+name_fr: MediaWiki
+tags_en:
+  - Wiki
+  - Web site
+tags_fr:
+  - Wiki
+  - Site web
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contactEmail: ilia.salem@tbs-sct.gc.ca
+        contactURL_en: 'https://github.com/gctools-outilsgc/gcpedia/issues'
+        contactURL_fr: 'https://github.com/gctools-outilsgc/gcpedia/issues'
+        description_en: Internal Government of Canada Wiki
+        description_fr: Wiki interne du gouvernement du Canada
+        metadataLastUpdated: 2019-05-16T06:00:00.000Z
+        name_en: GCpedia
+        name_fr: GCpedia
+        started: 2019-05-06T06:00:00.000Z
+      - contactEmail: ilia.salem@tbs-sct.gc.ca
+        contactURL_en: 'https://github.com/gctools-outilsgc/gcpedia/issues'
+        contactURL_fr: 'https://github.com/gctools-outilsgc/gcpedia/issues'
+        description_en: External Government of Canada Wiki
+        description_fr: Wiki externe du gouvernement du Canada
+        metadataLastUpdated: 2019-05-16T06:00:00.000Z
+        name_en: GCcollab Wiki
+        name_fr: Wiki GCcollab
+        started: 2019-05-06T06:00:00.000Z
