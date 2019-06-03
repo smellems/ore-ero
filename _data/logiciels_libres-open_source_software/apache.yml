@@ -1,0 +1,26 @@
+description_en: Cross-platform web server
+description_fr: Serveur Web multiplateforme
+homepageURL_en: 'https://httpd.apache.org'
+homepageURL_fr: 'https://httpd.apache.org'
+licenses:
+  - URL_en: 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+    URL_fr: 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+    spdxID: Apache-2.0
+name_en: Apache
+name_fr: Apache
+tags_en:
+  - HTTP Server
+tags_fr:
+  - Serveur HTTP
+administrations:
+  - adminCode: gac-amc
+    uses:
+      - contactEmail: sebastien.routier@international.gc.ca
+        contactURL_en: 'https://www.international.gc.ca'
+        contactURL_fr: 'https://www.international.gc.ca'
+        description_en: Used to server many Web sites.
+        description_fr: Utilisé pour servir plusieur site Web.
+        metadataLastUpdated: 2019-05-16T06:00:00.000Z
+        name_en: Misc
+        name_fr: Divers
+        started: 2019-05-06T06:00:00.000Z
