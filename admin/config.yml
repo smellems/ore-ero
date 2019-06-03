@@ -276,5 +276,5 @@ collections:
                 required: false
               - name: "users"
                 label: "Users"
-                widget: "string"
+                widget: "list"
                 required: false

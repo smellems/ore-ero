@@ -26,5 +26,4 @@ administrations:
         name_en: CSE Website
         name_fr: Site Web du CST
         started: 2019-05-06T06:00:00.000Z
-        status: ''
         users: public
