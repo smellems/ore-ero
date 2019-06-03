@@ -1,0 +1,24 @@
+description_en: A framework for mobile and desktop applications.
+description_fr: Un framework pour les applications mobiles et bureaux.
+homepageURL_en: 'https://angular.io/'
+homepageURL_fr: 'https://angular.io/'
+licenses:
+  - URL_en: 'https://github.com/angular/angular/blob/master/LICENSE'
+    URL_fr: 'https://github.com/angular/angular/blob/master/LICENSE'
+    spdxID: MIT
+name_en: Angular
+name_fr: Angular
+tags_en:
+  - software framework
+tags_fr:
+  - Cadriciel
+administrations:
+  - adminCode: mtl_qc
+    uses:
+      - contactEmail: libre@ville.montreal.qc.ca
+        description_en: Developpement
+        description_fr: Développement
+        metadataLastUpdated: 2019-05-06T06:00:00.000Z
+        name_en: Development environment software.
+        name_fr: Logiciels environnement de développement.
+        started: 2017-06-30T06:00:00.000Z
