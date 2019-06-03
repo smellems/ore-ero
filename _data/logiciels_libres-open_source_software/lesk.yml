@@ -1,0 +1,50 @@
+description_en: >-
+  Laravel Enterprise Starter Kit, is a template project based on the Laravel
+  framework, combining a set of features that can kick start any Web
+  application.
+description_fr: >-
+  Laravel Enterprise Starter Kit, est un projet de modèle basé sur le framework
+  Laravel, combinant un ensemble de fonctionnalités qui peuvent démarrer
+  n'importe quelle application Web.
+homepageURL_en: 'https://lesk.it'
+homepageURL_fr: 'https://lesk.it'
+licenses:
+  - URL_en: 'http://lesk.it/license.html'
+    URL_fr: 'http://lesk.it/license.html'
+    spdxID: GPL-3.0
+  - URL_en: 'http://lesk.it/license.html'
+    URL_fr: 'http://lesk.it/license.html'
+    spdxID: Apache-2.0
+name_en: LESK
+name_fr: LESK
+tags_en:
+  - HTTP Server
+  - PHP
+  - Laravel
+tags_fr:
+  - Serveur HTTP
+  - PHP
+  - Laravel
+administrations:
+  - adminCode: gac-amc
+    uses:
+      - contactEmail: terry.oreilly@international.gc.ca
+        contactName: Terry O'Reilly
+        contactURL_en: 'https://www.international.gc.ca'
+        contactURL_fr: 'https://www.international.gc.ca'
+        description_en: Information Management System Console.
+        description_fr: Information Management System Console.
+        metadataLastUpdated: 2019-05-15T06:00:00.000Z
+        name_en: IMSC
+        name_fr: IMSC
+        started: 2019-05-06T06:00:00.000Z
+      - contactEmail: yves.cloutier@international.gc.ca
+        contactName: Yves Cloutier
+        contactURL_en: 'https://www.international.gc.ca'
+        contactURL_fr: 'https://www.international.gc.ca'
+        description_en: COSMOS and ROCA Admin and Reporting Tool.
+        description_fr: COSMOS and ROCA Admin and Reporting Tool.
+        metadataLastUpdated: 2019-05-15T06:00:00.000Z
+        name_en: CART
+        name_fr: CART
+        started: 2019-05-06T06:00:00.000Z
