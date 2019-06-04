@@ -3,17 +3,11 @@
 {% assign projectName_array = "" | split: "," %}
 {% assign repoUrl_array = "" | split: "," %}
 
-{% for fptms in site.data.code %}
-  {% assign fptm = fptms[1] %}
-  {% for admins in fptm %}
-    {% assign admin = admins[1] %}
-    {% for release in admin.releases %}
-      {% for date in release.date.metadataLastUpdated %}
-        {% assign d = date | date:"%Y%j" %}
-        {% assign dates = dates | push: d %}
-      {% endfor %}              
-    {% endfor %}
-  {% endfor %}
+{% for file in site.data.code %}
+  {% assign contents = file[1] %}
+  {% assign date = contents.metadataLastUpdated %}
+  {% assign d = date | date:"%Y%j" %}
+  {% assign dates = dates | push: d %}
 {% endfor %}
 
 {% assign dates = dates | join: "," %}  
@@ -49,21 +43,18 @@
   {% assign lastUpdated = lastUpdatedPrime %}
 {% endfor %}
 
+{% assign nameField = "name_" | append: page.lang %}
+{% assign repoUrlField = "repoURL_" | append: page.lang %}
+
 {% for lastUpdatedValue in lastUpdated_array %}
-  {% for fptms in site.data.code %}
-  {% assign fptm = fptms[1] %}
-  {% for admins in fptm %}
-    {% assign admin = admins[1] %}
-    {% for release in admin.releases %} 
-      {% for date in release.date.metadataLastUpdated %}
-        {% assign d = date | date:"%Y%j" %}
-        {% if d == lastUpdatedValue %}
-          {% assign projectName_array = projectName_array | push: release.name[page.lang] %}
-          {% assign repoUrl_array = repoUrl_array | push: release.repositoryURL[page.lang] %}   
-        {% endif %} 
-      {% endfor %}   
-      {% endfor %}
-    {% endfor %}
+  {% for file in site.data.code %}
+    {% assign contents = file[1] %}
+    {% assign date = contents.metadataLastUpdated %}
+    {% assign d = date | date:"%Y%j" %}
+    {% if d == lastUpdatedValue %}
+      {% assign projectName_array = projectName_array | push: contents[nameField] %}
+      {% assign repoUrl_array = repoUrl_array | push: contents[repoUrlField] %}   
+    {% endif %}
   {% endfor %}
 {% endfor %}  
 
