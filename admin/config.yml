@@ -154,6 +154,7 @@ collections:
         #     valueField: "code"
         #     displayFields: ["name_en"]
         # Change this to contacts relation/collection
+        # Alternative: collection is administration, but administration has a list of contacts
       - name: "licenses"
         label: "Licenses"
         widget: "list"
