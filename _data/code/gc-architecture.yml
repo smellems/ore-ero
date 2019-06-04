@@ -1,0 +1,23 @@
+adminCode: ssc-spc
+contactEmail: john.bain2@canada.ca
+created: '2018-12-09'
+lastModified: ''
+metadataLastUpdated: '2019-03-06'
+description_en: Enterprise architecture models
+description_fr: Modèles d'architecture d'entreprise
+languages:
+  - '~'
+name_en: GC Architecture
+name_fr: Architecture GC
+partners: []
+licenses:
+  - spdxID: MIT
+    url_en: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'
+    url_fr: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'
+repoURL_en: 'https://github.com/canada-ca/architecture'
+repoURL_fr: 'https://github.com/canada-ca/architecture'
+relatedCode: []
+tags_en:
+  - Architecture
+tags_fr:
+  - Architecture
