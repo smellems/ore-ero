@@ -1,0 +1,25 @@
+description_en: Ansible is an IT automation tool.
+description_fr: Ansible est un outil d'automatisation informatique.
+homepageURL_en: 'https://www.ansible.com/'
+homepageURL_fr: 'https://www.ansible.com/'
+licenses:
+  - URL_en: 'https://github.com/ansible/ansible/blob/devel/COPYING'
+    URL_fr: 'https://github.com/ansible/ansible/blob/devel/COPYING'
+    spdxID: GPL-3.0
+name_en: Ansible
+name_fr: Ansible
+tags_en:
+  - Application platform
+tags_fr:
+  - Plateforme applicative
+administrations:
+  - adminCode: mtl_qc
+    uses:
+      - contactEmail: libre@ville.montreal.qc.ca
+        contactURL_en: ''
+        description_en: Application Management.
+        description_fr: Gestion applicative.
+        metadataLastUpdated: 2019-05-06T06:00:00.000Z
+        name_en: Application Server Software.
+        name_fr: Logiciels serveur d'applications.
+        started: 2017-06-30T06:00:00.000Z

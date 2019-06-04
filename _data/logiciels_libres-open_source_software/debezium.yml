@@ -1,0 +1,26 @@
+description_en: Debezium is an open source distributed platform for change data capture.
+description_fr: >-
+  Debezium est une platforme distribuée d'une ressource ouverte pour la capture
+  de données modifiées.
+homepageURL_en: 'https://debezium.io/'
+homepageURL_fr: 'https://debezium.io/'
+licenses:
+  - URL_en: 'https://github.com/debezium/debezium/blob/master/LICENSE.txt'
+    URL_fr: 'https://github.com/debezium/debezium/blob/master/LICENSE.txt'
+    spdxID: Apache-2.0
+name_en: Debezium
+name_fr: Debezium
+tags_en:
+  - Incremental management of data
+tags_fr:
+  - Gestion incrementale des données
+administrations:
+  - adminCode: mtl_qc
+    uses:
+      - contactEmail: libre@ville.montreal.qc.ca
+        description_en: Data management.
+        description_fr: Gestion des données.
+        metadataLastUpdated: 2019-05-10T06:00:00.000Z
+        name_en: Software Database Management Systems.
+        name_fr: Logiciels de systèmes de gestion de base de données.
+        started: 2017-06-30T06:00:00.000Z

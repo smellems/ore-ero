@@ -1,0 +1,41 @@
+description_en: Performs operating-system-level virtualization also known as containerization
+description_fr: >-
+  Effectue une virtualisation au niveau du système d'exploitation, également
+  appelée conteneurisation
+homepageURL_en: 'https://www.docker.com'
+homepageURL_fr: 'https://www.docker.com'
+licenses:
+  - URL_en: 'https://www.docker.com/legal/components-licenses'
+    URL_fr: 'https://www.docker.com/legal/components-licenses'
+    spdxID: Apache-2.0
+name_en: Docker
+name_fr: Docker
+tags_en:
+  - Container platform
+  - Development
+  - Infrastructure
+tags_fr:
+  - Plate-forme de conteneur
+  - Développement
+  - Infrastructure
+administrations:
+  - adminCode: statcan
+    uses:
+      - contactEmail: michael.goit@canada.ca
+        description_en: Development and deployment
+        description_fr: Développements et Déploiements
+        metadataLastUpdated: 2019-05-13T06:00:00.000Z
+        name_en: Development and deployment process
+        name_fr: Processus de développements et déploiements
+        started: 2019-05-06T06:00:00.000Z
+  - adminCode: tbs-sct
+    uses:
+      - contactEmail: ilia.salem@tbs-sct.gc.ca
+        description_en: Development and deployment
+        description_fr: Développements et Déploiements
+        metadataLastUpdated: 2019-05-13T06:00:00.000Z
+        name_en: Digital Collaboration Division development and deployment
+        name_fr: >-
+          Développement et déploiement de la Division de la collaboration
+          numérique
+        started: 2019-05-06T06:00:00.000Z

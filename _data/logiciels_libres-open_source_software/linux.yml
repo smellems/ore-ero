@@ -1,0 +1,24 @@
+description_en: The Linux kernel is a Unix-like computer operating system kernel
+description_fr: Le noyau Linux est un noyau de système d'exploitation de type UNIX
+homepageURL_en: 'https://www.linux.org'
+homepageURL_fr: 'https://www.linux.org'
+licenses:
+  - URL_en: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
+    URL_fr: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
+    spdxID: GPL-2.0
+name_en: Linux
+name_fr: Linux
+tags_en:
+  - Operating system kernel
+tags_fr:
+  - Noyau de système d'exploitation
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contactEmail: ilia.salem@tbs-sct.gc.ca
+        description_en: APM data
+        description_fr: Données du APM
+        metadataLastUpdated: 2019-05-15T06:00:00.000Z
+        name_en: Development Environment
+        name_fr: Environnement de développement
+        started: 2019-05-06T06:00:00.000Z

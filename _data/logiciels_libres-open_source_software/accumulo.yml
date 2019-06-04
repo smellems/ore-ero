@@ -1,4 +1,3 @@
-schemaVersion: '1.0'
 description_en: >-
   Accumulo is a sorted, distributed key/value store  that provides robust,
   scalable data storage and retrieval.
@@ -20,12 +19,10 @@ tags_fr:
 administrations:
   - adminCode: mtl_qc
     uses:
-      - contact:
-          email: libre@ville.montreal.qc.ca
-        date:
-          metadataLastUpdated: 2019-05-06T06:00:00.000Z
-          started: 2019-01-31T07:00:00.000Z
+      - contactEmail: libre@ville.montreal.qc.ca
         description_en: Data managment.
         description_fr: Gestion des données.
+        metadataLastUpdated: 2019-05-06T06:00:00.000Z
         name_en: Software Database Management Systems.
         name_fr: Logiciels de systèmes de gestion de base de données.
+        started: 2019-01-31T07:00:00.000Z

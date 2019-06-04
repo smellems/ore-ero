@@ -1,0 +1,30 @@
+description_en: >-
+  A server-side scripting language designed for web development but also used as
+  a general-purpose programming language.
+description_fr: >-
+  Langage de script côté serveur conçu pour le développement Web mais également
+  utilisé comme langage de programmation généraliste.
+homepageURL_en: 'https://php.net'
+homepageURL_fr: 'https://php.net'
+licenses:
+  - URL_en: 'https://php.net/license/index.php'
+    URL_fr: 'https://php.net/license/index.php'
+    spdxID: PHP-License
+name_en: PHP
+name_fr: PHP
+tags_en:
+  - Programming language
+tags_fr:
+  - langage de programmation
+administrations:
+  - adminCode: gac-amc
+    uses:
+      - contactEmail: sebastien.routier@international.gc.ca
+        contactURL_en: 'https://www.international.gc.ca'
+        contactURL_fr: 'https://www.international.gc.ca'
+        description_en: Used to server many Web sites.
+        description_fr: Utilisé pour servir plusieur site Web.
+        metadataLastUpdated: 2019-05-16T06:00:00.000Z
+        name_en: Misc
+        name_fr: Divers
+        started: 2019-05-06T06:00:00.000Z

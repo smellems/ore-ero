@@ -1,0 +1,35 @@
+adminCode: mtl_qc
+contactEmail: julio.alcantara@ville.montreal.qc.ca
+contactURL_en: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues'
+contactURL_fr: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues'
+created: '2014-02-14'
+lastModified: ''
+metadataLastUpdated: '2019-01-29'
+description_en: City of Montreal CKAN Extension
+description_fr: Extension CKAN de la ville de Montréal
+languages:
+  - Python
+name_en: CKAN-Extension-Territoire
+name_fr: CKAN-Extension-Territoire
+partners: []
+licenses:
+  - spdxID: MIT
+    url_en: >-
+      https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-en.txt
+    url_fr: >-
+      https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-fr.txt
+repoURL_en: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire'
+repoURL_fr: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire'
+relatedCode:
+  - relatedCodeName_en: CKAN
+    relatedCodeName_fr: CKAN
+    relatedCodeURL_en: 'https://github.com/ckan/ckan'
+    relatedCodeURL_fr: 'https://github.com/ckan/ckan'
+tags_en:
+  - CKAN Extension
+  - Data Catalogue
+tags_fr:
+  - Extension CKAN
+  - Catalogue de données
+vcs: git
+status: Production

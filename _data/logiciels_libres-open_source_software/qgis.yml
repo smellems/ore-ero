@@ -1,0 +1,24 @@
+description_en: A Free and Open Source Geographic Information System
+description_fr: Système d'Information Géographique Libre et Open Source
+homepageURL_en: 'https://qgis.org/en/site/'
+homepageURL_fr: 'https://qgis.org/fr/site/'
+licenses:
+  - URL_en: 'https://github.com/qgis/QGIS/blob/master/COPYING'
+    URL_fr: 'https://github.com/qgis/QGIS/blob/master/COPYING'
+    spdxID: GPL-2.0
+name_en: QGIS
+name_fr: QGIS
+tags_en:
+  - gis
+tags_fr:
+  - sig
+administrations:
+  - adminCode: statcan
+    uses:
+      - contactEmail: reginald.maltais2@canada.ca
+        description_en: Desktop geospatial information processing
+        description_fr: Système d'information géospatiale de bureau
+        metadataLastUpdated: 2019-05-16T06:00:00.000Z
+        name_en: Geographic Information Systems (GIS)
+        name_fr: Systèmes d'information géographique (SIG)
+        started: 2019-05-06T06:00:00.000Z

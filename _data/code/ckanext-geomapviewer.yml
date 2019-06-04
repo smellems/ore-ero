@@ -1,0 +1,27 @@
+adminCode: ab
+contactEmail: open@gov.ab.ca
+contactURL_en: 'https://github.com/abgov/ckanext-geomapviewer/issues'
+contactURL_fr: 'https://github.com/abgov/ckanext-geomapviewer/issues'
+created: '2016-08-03'
+lastModified: ''
+metadataLastUpdated: '2016-08-03'
+description_en: Ckan Geo Map Viewer Extension
+description_fr: Extension Ckan de la carte géographique
+languages:
+  - Python
+name_en: ckanext-geomapviewer
+name_fr: ckanext-geomapviewer
+partners: []
+licenses:
+  - spdxID: AGPL-3.0
+    url_en: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'
+    url_fr: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'
+repoURL_en: 'https://github.com/abgov/ckanext-geomapviewer'
+repoURL_fr: 'https://github.com/abgov/ckanext-geomapviewer'
+relatedCode: []
+tags_en:
+  - CKAN Extension
+tags_fr:
+  - Extension CKAN
+vcs: git
+status: Production

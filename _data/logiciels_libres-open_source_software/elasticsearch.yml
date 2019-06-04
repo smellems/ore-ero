@@ -1,0 +1,38 @@
+description_en: >-
+  Elasticsearch is a distributed, RESTful search and analytics engine capable of
+  solving a growing number of use cases.
+description_fr: >-
+  Elasticsearch est un moteur de recherche et d'analyse RESTful distribué, conçu
+  pour répondre à une multitude de cas d'utilisation.
+homepageURL_en: 'https://www.elastic.co/products/elasticsearch'
+homepageURL_fr: 'https://www.elastic.co/fr/products/elasticsearch'
+licenses:
+  - URL_en: 'https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html'
+    URL_fr: 'https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html'
+    spdxID: Apache-2.0
+name_en: Elasticsearch
+name_fr: Elasticsearch
+tags_en:
+  - Web site
+tags_fr:
+  - Site web
+administrations:
+  - adminCode: tc
+    uses:
+      - contactEmail: irina.krasteleva@tc.gc.ca
+        contactName: Irina Krasteleva
+        description_en: APM data
+        description_fr: Données du APM
+        metadataLastUpdated: 2019-05-13T06:00:00.000Z
+        name_en: Development Environment
+        name_fr: Environnement de développement
+        started: 2019-05-06T06:00:00.000Z
+  - adminCode: mtl_qc
+    uses:
+      - contactEmail: libre@ville.montreal.qc.ca
+        description_en: Information managment.
+        description_fr: Gestion de l'information.
+        metadataLastUpdated: 2019-05-10T06:00:00.000Z
+        name_en: Data mining software (data mining).
+        name_fr: Logiciels d'extraction de données (data mining).
+        started: 2017-06-30T06:00:00.000Z

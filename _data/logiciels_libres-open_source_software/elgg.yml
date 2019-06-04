@@ -1,0 +1,43 @@
+description_en: Highly customizable web framework and CMS for building social apps
+description_fr: >-
+  Framework Web hautement personnalisable et CMS pour créer des applications
+  sociales
+homepageURL_en: 'https://elgg.org/'
+homepageURL_fr: 'https://elgg.org/'
+licenses:
+  - URL_en: 'http://learn.elgg.org/en/2.0/intro/license.html'
+    URL_fr: 'http://learn.elgg.org/en/2.0/intro/license.html'
+    spdxID: MIT
+  - URL_en: 'http://learn.elgg.org/en/2.0/intro/license.html'
+    URL_fr: 'http://learn.elgg.org/en/2.0/intro/license.html'
+    spdxID: GPL-2.0
+name_en: Elgg
+name_fr: Elgg
+tags_en:
+  - Collaboration
+  - Social
+tags_fr:
+  - Collaboration. Sociale
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contactEmail: ilia.salem@tbs-sct.gc.ca
+        contactURL_en: 'https://github.com/gctools-outilsgc/gcconnex/issues'
+        contactURL_fr: 'https://github.com/gctools-outilsgc/gcconnex/issues'
+        description_en: External social networking platform hosted by the Government of Canada
+        description_fr: >-
+          Plateforme de réseautage social externe hébergée par le gouvernement
+          du Canada
+        metadataLastUpdated: 2019-05-13T06:00:00.000Z
+        name_en: GCcollab
+        name_fr: GCcollab
+        started: 2019-05-06T06:00:00.000Z
+      - contactEmail: ilia.salem@tbs-sct.gc.ca
+        contactURL_en: 'https://github.com/gctools-outilsgc/gcconnex/issues'
+        contactURL_fr: 'https://github.com/gctools-outilsgc/gcconnex/issues'
+        description_en: Internal social networking platform for the Government of Canada
+        description_fr: Plateforme de réseautage social interne pour le gouvernement du Canada
+        metadataLastUpdated: 2019-05-13T06:00:00.000Z
+        name_en: GCconnex
+        name_fr: GCconnex
+        started: 2019-05-06T06:00:00.000Z

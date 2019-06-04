@@ -1,0 +1,27 @@
+adminCode: ab
+contactEmail: open@gov.ab.ca
+contactURL_en: 'https://github.com/abgov/ckanext-open_alberta/issues'
+contactURL_fr: 'https://github.com/abgov/ckanext-open_alberta/issues'
+created: '2016-07-05'
+lastModified: ''
+metadataLastUpdated: '2017-05-03'
+description_en: Ckan extension developed for use on open.alberta.ca
+description_fr: Extension Ckan développée pour être utilisée dans open.alberta.ca
+languages:
+  - Python
+name_en: ckanext-open_alberta
+name_fr: ckanext-open_alberta
+partners: []
+licenses:
+  - spdxID: AGPL-3.0
+    url_en: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
+    url_fr: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
+repoURL_en: 'https://github.com/abgov/ckanext-open_alberta'
+repoURL_fr: 'https://github.com/abgov/ckanext-open_alberta'
+relatedCode: []
+tags_en:
+  - CKAN Extension
+tags_fr:
+  - Extension CKAN
+vcs: git
+status: Production
