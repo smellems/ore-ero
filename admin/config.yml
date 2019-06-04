@@ -74,6 +74,7 @@ collections:
       - name: "lastModified"
         label: "Last Modified"
         widget: "date"
+        default: ""
         format: "YYYY-MM-DD"
         required: false
       - name: "metadataLastUpdated"
@@ -149,6 +150,7 @@ collections:
       - name: "relatedCode"
         label: "Related Code"
         widget: "list"
+        required: false
         fields:
           - name: "relatedCodeURL_en"
             label: "English Related Code URL"
