@@ -1,0 +1,34 @@
+adminCode: cse-cst
+contactEmail: media@cse-cst.gc.ca
+contactURL_en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/issues'
+contactURL_fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/issues'
+created: '2016-02-28'
+metadataLastUpdated: '2019-01-31'
+description_en: >-
+  Learning environment that aims in helping students learn the basis of assembly
+  programming and operating system development
+description_fr: >-
+  Environnement visant à aider les étudiants à apprendre les bases de la
+  programmation assembleur et du développement de systèmes d'exploitation. C'est
+  un environnement portable et facile à apprendre
+languages:
+  - Python
+name_en: Spartacus
+name_fr: Spartacus
+licenses:
+  - spdxID: GPL-2.0
+    url_en: >-
+      https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
+    url_fr: >-
+      https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
+repoURL_en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus'
+repoURL_fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus'
+tags_en:
+  - Learning
+  - Assembly programming
+  - Operating system development
+tags_fr:
+  - Apprentissage
+  - Programmation assembleur
+  - Développement système d'exploitation
+vcs: git

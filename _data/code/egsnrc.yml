@@ -1,0 +1,27 @@
+adminCode: nrc-cnrc
+contactEmail: Frederic.Tessier@nrc-cnrc.gc.ca
+created: '2012-11-25'
+metadataLastUpdated: '2019-01-31'
+description_en: >-
+  Toolkit to perform Monte Carlo simulation of ionizing radiation transport
+  through matter
+description_fr: >-
+  Boîte à outils pour effectuer une simulation de Monte Carlo du transport du
+  rayonnement ionisant à travers la matière
+languages:
+  - C++
+name_en: EGSnrc
+name_fr: EGSnrc
+licenses:
+  - spdxID: AGPL-3.0
+    url_en: 'https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE'
+    url_fr: 'https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE'
+repoURL_en: 'https://github.com/nrc-cnrc/EGSnrc'
+repoURL_fr: 'https://github.com/nrc-cnrc/EGSnrc'
+tags_en:
+  - Monte Carlo simulation
+  - Ionizing radiation
+tags_fr:
+  - Simulation de Monte Carlo
+  - Rayonnement ionisant
+vcs: git
