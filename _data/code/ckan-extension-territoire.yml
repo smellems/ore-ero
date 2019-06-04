@@ -3,7 +3,6 @@ contactEmail: julio.alcantara@ville.montreal.qc.ca
 contactURL_en: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues'
 contactURL_fr: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues'
 created: '2014-02-14'
-lastModified: ''
 metadataLastUpdated: '2019-01-29'
 description_en: City of Montreal CKAN Extension
 description_fr: Extension CKAN de la ville de Montréal
@@ -11,7 +10,6 @@ languages:
   - Python
 name_en: CKAN-Extension-Territoire
 name_fr: CKAN-Extension-Territoire
-partners: []
 licenses:
   - spdxID: MIT
     url_en: >-

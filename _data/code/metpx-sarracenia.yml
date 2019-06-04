@@ -1,0 +1,30 @@
+adminCode: ssc-spc
+contactEmail: Peter.Silva@canada.ca
+created: '2013-10-06'
+metadataLastUpdated: '2019-01-31'
+description_en: >-
+  Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything
+  Nearly Instantly and Always
+description_fr: >-
+  Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer
+  Instantanément et Ad vitam aeternam
+languages:
+  - Python
+  - C
+name_en: MetPX-Sarracenia
+name_fr: MetPX-Sarracenia
+licenses:
+  - spdxID: GPL-2.0
+    url_en: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
+    url_fr: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
+repoURL_en: 'https://github.com/MetPX/sarracenia'
+repoURL_fr: 'https://github.com/MetPX/sarracenia'
+tags_en:
+  - Environment
+  - Temperature
+  - Roads
+tags_fr:
+  - Météo
+  - Données
+  - Communication
+vcs: git

@@ -1,0 +1,20 @@
+adminCode: statcan
+contactEmail: maksymarturo.neyra-nesterenko@canada.ca
+contactURL_en: 'https://github.com/CSBP-CPSE/OpenTabulate/issues'
+created: '2018-01-07'
+lastModified: ''
+metadataLastUpdated: '2019-04-18'
+description_en: 'Centralize, process, and clean data'
+description_fr: 'Centraliser, traiter et nettoyer les données'
+name_en: OpenTabulate
+name_fr: OpenTabulate
+licenses:
+  - spdxID: MIT
+    url_en: 'https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md'
+    url_fr: 'https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md'
+repoURL_en: 'https://github.com/CSBP-CPSE/OpenTabulate'
+repoURL_fr: 'https://github.com/CSBP-CPSE/OpenTabulate'
+tags_en:
+  - Data
+tags_fr:
+  - Données

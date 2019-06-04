@@ -75,6 +75,7 @@ collections:
       - name: "lastModified"
         label: "Last Modified"
         widget: "date"
+        default: ""
         format: "YYYY-MM-DD"
         required: false
       - name: "metadataLastUpdated"
@@ -112,18 +113,48 @@ collections:
       - name: "name_fr"
         label: "French Name"
         widget: "string"
+      - name: "organization_en"
+        label: "English Organization Name"
+        widget: "string"
+        required: false
+      - name: "organization_fr"
+        label: "French Organization Name"
+        widget: "string"
+        required: false
       - name: "partners"
         label: "Partners"
         widget: "list"
         required: false
         fields:
-          - name: "partnerCode"
-            label: "Partner"
-            widget: "relation"
-            collection: "administrations"
-            searchFields: ["name_en", "name_fr"]
-            valueField: "code"
-            displayFields: ["name_en"]
+          - name: "URL_en"
+            label: "English URL"
+            widget: "string"
+            required: false
+          - name: "URL_fr"
+            label: "French URL"
+            widget: "string"
+            required: false
+          - name: "email"
+            label: "Email"
+            widget: "string"
+          - name: "name_en"
+            label: "English Name"
+            widget: "string"
+            required: false
+          - name: "name_fr"
+            label: "French Name"
+            wudget: "string"
+            required: false
+        # fields:
+        #   - name: "partnerCode"
+        #     label: "Partner"
+        #     widget: "relation"
+        #     collection: "administrations"
+        #     searchFields: ["name_en", "name_fr"]
+        #     valueField: "code"
+        #     displayFields: ["name_en"]
+        # Change this to contacts relation/collection
+        # Alternative: collection is administration, but administration has a list of contacts
       - name: "licenses"
         label: "Licenses"
         widget: "list"
@@ -150,6 +181,7 @@ collections:
       - name: "relatedCode"
         label: "Related Code"
         widget: "list"
+        required: false
         fields:
           - name: "relatedCodeURL_en"
             label: "English Related Code URL"

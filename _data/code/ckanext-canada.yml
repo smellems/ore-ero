@@ -1,0 +1,30 @@
+adminCode: tbs-sct
+contactEmail: Christopher.Jaja@tbs-sct.gc.ca
+contactName: Christopher Jaja
+created: '2012-12-09'
+metadataLastUpdated: '2018-03-26'
+description_en: Government of Canada CKAN Extension
+description_fr: Extension à CKAN du Gouvernement du Canada
+languages:
+  - Python
+name_en: ckanext-canada
+name_fr: ckanext-canada
+organization_en: Open Government
+organization_fr: Gouvernement Ouvert
+licenses:
+  - spdxID: MIT
+    url_en: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING'
+    url_fr: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr'
+repoURL_en: 'https://github.com/open-data/ckanext-canada'
+repoURL_fr: 'https://github.com/open-data/ckanext-canada'
+relatedCode:
+  - relatedCodeName_en: CKAN
+    relatedCodeName_fr: CKAN
+    relatedCodeURL_en: 'https://github.com/ckan/ckan'
+    relatedCodeURL_fr: 'https://github.com/ckan/ckan'
+tags_en:
+  - CKAN Extension
+tags_fr:
+  - Extension CKAN
+vcs: git
+status: Production

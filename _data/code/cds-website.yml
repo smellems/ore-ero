@@ -1,0 +1,25 @@
+adminCode: tbs-sct
+contactEmail: cds-snc@tbs-sct.gc.ca
+created: '2017-04-09'
+metadataLastUpdated: '2019-01-31'
+description_en: >-
+  Both digital.canada.ca and numerique.canada.ca are published from this
+  repository.
+description_fr: >-
+  digital.canada.ca et numerique.canada.ca sont publiés à partir de ce
+  repository.
+name_en: CDS Website
+name_fr: Site Web SNC
+organization_en: Canadian Digital Services
+organization_fr: Services numériques Canadiens
+licenses:
+  - spdxID: MIT
+    url_en: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
+    url_fr: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
+repoURL_en: 'https://github.com/cds-snc/digital-canada-ca'
+repoURL_fr: 'https://github.com/cds-snc/digital-canada-ca'
+tags_en:
+  - Website
+tags_fr:
+  - Site Web
+vcs: git
