@@ -1,0 +1,31 @@
+adminCode: bc
+contactEmail: todd.wilson@gov.bc.ca
+contactURL_en: 'https://github.com/bcgov/devhub-app-web/issues'
+contactURL_fr: 'https://github.com/bcgov/devhub-app-web/issues'
+created: '2017-10-20'
+lastModified: ''
+metadataLastUpdated: '2019-05-10'
+description_en: Web application for the DevHub.
+description_fr: Application Web pour le DevHub.
+homepageURL_en: 'https://developer.gov.bc.ca/'
+homepageURL_fr: 'https://developer.gov.bc.ca/'
+languages:
+  - JavaScript
+name_en: devhub-app-web
+name_fr: devhub-app-web
+partners: []
+licenses:
+  - spdxID: Apache-2.0
+    url_en: 'https://github.com/bcgov/devhub-app-web/blob/master/LICENSE'
+    url_fr: 'https://github.com/bcgov/devhub-app-web/blob/master/LICENSE'
+repoURL_en: 'https://github.com/bcgov/devhub-app-web'
+repoURL_fr: 'https://github.com/bcgov/devhub-app-web'
+relatedCode:
+  - {}
+tags_en:
+  - DevHub App Web
+tags_fr:
+  - DevHub App Web
+vcs: git
+status: Development
+version: 2.7.0
