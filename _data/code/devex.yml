@@ -1,0 +1,28 @@
+adminCode: bc
+contactEmail: bcdevexchange@gov.bc.ca
+contactURL_en: 'https://github.com/BCDevExchange/devex/issues'
+contactURL_fr: 'https://github.com/BCDevExchange/devex/issues'
+created: '2016-10-23'
+lastModified: ''
+metadataLastUpdated: '2019-01-29'
+description_en: B.C. Developer Exchange Application
+description_fr: Application Échange de développeurs C.-B.
+languages:
+  - Python
+name_en: Devex
+name_fr: Devex
+partners: []
+licenses:
+  - spdxID: Apache-2.0
+    url_en: 'https://github.com/BCDevExchange/devex/blob/develop/LICENSE'
+    url_fr: 'https://github.com/BCDevExchange/devex/blob/develop/LICENSE'
+repoURL_en: 'https://github.com/BCDevExchange/devex'
+repoURL_fr: 'https://github.com/BCDevExchange/devex'
+relatedCode:
+  - {}
+tags_en:
+  - Developer Exchange
+tags_fr:
+  - Échange de développeurs
+vcs: git
+status: Production
