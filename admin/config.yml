@@ -38,6 +38,7 @@ collections:
     folder: "_data/code"
     extension: "yml"
     summary: "{{name_en}}"
+    identifier_field: "name_en"
     create: true
     fields:
       - name: "adminCode"
@@ -113,6 +114,7 @@ collections:
       - name: "partners"
         label: "Partners"
         widget: "list"
+        required: false
         fields:
           - name: "partnerCode"
             label: "Partner"
@@ -135,14 +137,35 @@ collections:
       - name: "repoURL_fr"
         label: "French Repository URL"
         widget: "string"
+      # - name: "relatedCode"
+      #   label: "Related Code"
+      #   widget: "relation"
+      #   collection: "oss"
+      #   searchFields: ["name_en", "name_fr"]
+      #   valueField: "name_en"
+      #   displayFields: ["name_en"]
+      #   required: false
+      # This might not work for code not referenced in the project (external code)
       - name: "relatedCode"
         label: "Related Code"
-        widget: "relation"
-        collection: "oss"
-        searchFields: ["name_en", "name_fr"]
-        valueField: "name_en"
-        displayFields: ["name_en", "name_fr"]
-        required: false
+        widget: "list"
+        fields:
+          - name: "relatedCodeURL_en"
+            label: "English Related Code URL"
+            widget: "string"
+            required: false
+          - name: "relatedCodeURL_fr"
+            label: "French Related Code URL"
+            widget: "string"
+            required: false
+          - name: "relatedCodeName_en"
+            label: "English Related Code Name"
+            widget: "string"
+            required: false
+          - name: "relatedCodeName_fr"
+            label: "French Related Code Name"
+            widget: "string"
+            required: false
       - name: "tags_en"
         label: "English Tags"
         widget: "list"
@@ -156,7 +179,7 @@ collections:
       - name: "status"
         label: "Status of the project"
         widget: "select"
-        options: ["Alpha", "Beta", "Maintained", "Deprecated", "Retired"]
+        options: ["Alpha", "Beta", "Deprecated", "Development", "Maintained", "Production", "Retired"]
         required: false
       - name: "version"
         label: "Version"
