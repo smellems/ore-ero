@@ -9,7 +9,10 @@ languages:
   - '~'
 name_en: Open Resource Exchange
 name_fr: Échange de Ressource Ouvert
-partners: []
+partners:
+  - email: renatabianca.tomazeli@ville.montreal.qc.ca
+    name_en: City of Montreal
+    name_fr: Ville de Montréal
 licenses:
   - spdxID: MIT
     url_en: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
