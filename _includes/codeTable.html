@@ -1,5 +1,12 @@
 <div class="row">
 
+    {% assign name_attr = "name_" | append: page.lang %}
+    {% assign description_attr = "description_" | append: page.lang %}
+    {% assign url_attr = "url_" | append: page.lang %}
+    {% assign contact_url_attr = "contactURL_" | append: page.lang %}
+    {% assign tags_attr = "tags_" | append: page.lang %}
+    {% assign repo_url_attr = "repoURL_" | append: page.lang %}
+
 <!-- Filter dropdowns -->
 <div class="col-md-3">
   <details open>
@@ -7,12 +14,11 @@
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
         <label for="dt_govLevel">{{ site.LevelOfGovernment[page.lang] }}</label>
-        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
+        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="6">
           <option value="">&nbsp;</option>
-          {% for fptms in site.data.code %}
-          {% assign fptm = fptms[0] %}
-            <option value="{{ fptm | capitalize  }}">{{ fptm | capitalize }}</option>
-          {% endfor %}
+          <option value="Federal">Federal</option>
+          <option value="Provincial">Provincial</option>
+          <option value="Municipal">Municipal</option>
         </select>
       </div>
 
@@ -20,62 +26,9 @@
         <label for="dt_department">Administration</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value="">&nbsp;</option>
-          {% assign admin_array = "" | split: ',' %}
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[1] %}
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}   
-              {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
-              {% if aName[0].name[page.lang] != nil %}
-                {% assign admin_array = admin_array | push: aName[0].name[page.lang] %}
-              {% endif %}
-            {% endfor %}
-            
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}   
-              {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
-              {% if aName[0].name[page.lang] != nil %}
-                {% assign admin_array = admin_array | push: aName[0].name[page.lang] %}
-              {% endif %}
-            {% endfor %}
-            
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}   
-              {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
-              {% if aName[0].name[page.lang] != nil %}
-                {% assign admin_array = admin_array | push: aName[0].name[page.lang] %}
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-          
-          {% assign admin_array = admin_array | sort %}
-          {% for admin in admin_array %}
-            <option value="{{ admin }}">{{ admin }}</option>
-          {% endfor %}
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="dt_organization">{{ site.Organization[page.lang] }}</label>
-        <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
-          <option value="">&nbsp;</option>
-          {% assign org_array = "" | split: ',' %}
-          
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[1] %}
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}
-              {% for release in admin.releases %}
-                {% if release.organization[page.lang] != nil %}
-                  {% assign org_array = org_array | push: release.organization[page.lang] %}
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          {% endfor %}
-                    
-          {% assign org_array = org_array | group_by: "" | sort: "name" %}
-          {% for org in org_array %}
-            <option value="{{ org.name }}">{{ org.name }}</option>
+          {% assign admins = site.data.administrations %}
+          {% for admin in admins %}
+            <option value="{{ admin[1][name_attr] }}">{{ admin[1][name_attr] }}</option>
           {% endfor %}
         </select>
       </div>
@@ -85,22 +38,13 @@
         <select class="form-control" id="dt_license" name="dt_license" data-column="3">
           <option value="">&nbsp;</option>
           {% assign license_array = "" | split: ',' %}
-          
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[1] %}
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}
-              {% for release in admin.releases %}
-                {% for license in release.licenses %}
-                  {% assign license_array = license_array | push: license.spdxID %}
-                {% endfor %}
-              {% endfor %}
-            {% endfor %}
+          {% for projects in site.data.code %}
+            {% assign license_array = license_array | concat: projects[1].licenses %}
           {% endfor %}
-                    
-          {% assign license_array = license_array | group_by: "" | sort: "name" %}
-          {% for license in license_array %}
-            <option value="{{ license.name }}">{{ license.name }}</option>
+
+          {% assign spdxIDs = license_array | map: 'spdxID' | sort | uniq %}
+          {% for license in spdxIDs %}
+            <option value="{{ license }}">{{ license }}</option>
           {% endfor %}
         </select>
       </div>
@@ -110,22 +54,14 @@
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="4">
           <option value="">&nbsp;</option>
           {% assign tag_array = "" | split: ',' %}
-          
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[1] %}
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}
-              {% for release in admin.releases %}
-                {% for tag in release.tags[page.lang] %}
-                  {% assign tag_array = tag_array | push: tag %}
-                {% endfor %}
-              {% endfor %}
-            {% endfor %}
+
+          {% for projects in site.data.code %}
+            {% assign tag_array = tag_array | concat: projects[1][tags_attr] %}
           {% endfor %}
-          
-          {% assign tag_array = tag_array | group_by: "" | sort: "name" %}
-          {% for tag in tag_array %}
-            <option value="{{ tag.name }}">{{ tag.name }}</option>
+
+          {% assign tags = tag_array | sort | uniq %}
+          {% for tag in tags %}
+            <option value="{{ tag }}">{{ tag }}</option>
           {% endfor %}
         </select>
       </div>
@@ -145,7 +81,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,4,5,7,8,9,10,11,12,13,14], "visible": false}], "paging": true}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,4,6,7,8,9,10,11,12,13], "visible": true}], "paging": true}'>
     <thead>
       <tr>
         <th>Administration</th>
@@ -153,7 +89,6 @@
         <th>Description</th>
         <th>{{ site.License[page.lang] }}</th>
         <th>{{ site.Tag[page.lang] }}</th>
-        <th>{{ site.Organization[page.lang] }}</th>
         <th>Code Repo</th>
         <th>{{ site.LevelOfGovernment[page.lang] }}</th>
         <th>{{ site.Language[page.lang] }}</th>
@@ -166,79 +101,59 @@
       </tr>
     </thead>
     <tbody>
-      
-      {% for fptms in site.data.code %}
-        {% assign fptm = fptms[1] %}
-        {% for admins in fptm %}
-          {% assign admin = admins[1] %}
-          {% for release in admin.releases %}
-          <tr>
-            {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
-            {% if aName[0].name[page.lang] != nil %}
-              <td>{{ aName[0].name[page.lang] }}</td>
-            {% endif %}
-            
-            {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
-            {% if aName[0].name[page.lang] != nil %}
-              <td>{{ aName[0].name[page.lang] }}</td>
-            {% endif %}
-            
-            {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
-            {% if aName[0].name[page.lang] != nil %}
-              <td>{{ aName[0].name[page.lang] }}</td>
-            {% endif %}
-            
-            <td><a href="#{{ release.name[page.lang] | slugify }}" aria-controls="{{ release.name[page.lang] | slugify }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
-            <td>{{ release.description[page.lang] }}</td>
-            <td>
-              {% for license in release.licenses %}
-                <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
-              {% endfor %}
-            </td>
-            <td>
-              {% for tag in release.tags[page.lang] %}
-                {{ tag }}&nbsp;
-              {% endfor %}
-            </td>
-            <td>
-              {{ release.organization[page.lang] }}
-            </td>
-            <td>
-              <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
-                {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
-              </a>
-            </td>
-            <td>
-              {{fptms[0] | capitalize}}
-            </td>
-            <td>
-              {% for langauge in release.languages %}
-                {{ langauge }}&nbsp;
-              {% endfor %}
-            </td>
-            <td>
-              {% for relatedCode in release.relatedCode %}
-                <a href= "{{ relatedCode.URL[page.lang] }}">{{ relatedCode.name[page.lang] }}</a>
-              {% endfor %}
-            </td>
-            <td>
-              {{ release.status }}&nbsp;
-            </td>
-            <td>
-              {{ release.vcs }}&nbsp;
-            </td>
-            <td>
-              {{ release.version }}&nbsp;
-            </td>
-            <td>
-              {{ release.date.created }}&nbsp;
-            </td>
-            <td>
-              {{ release.date.metadataLastUpdated }}&nbsp;
-            </td>
-          </tr>
+      {% for release in site.data.code %}
+      <tr>
+        {% assign admin_code = release[1].adminCode %}
+        
+        <td>{{ site.data.administrations[admin_code][name_attr] }}</td>
+        
+        
+        <td><a href="#{{ release[1][name_attr] | slugify }}" aria-controls="{{ release[1][name_attr] | slugify }}" class="overlay-lnk" role="button" >{{ release[1][name_attr] }}</a></td>
+        <td>{{ release[1][description_attr] }}</td>
+        <td>
+          {% for license in release[1].licenses %}
+            <a href="{{ license[url_attr] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
           {% endfor %}
-        {% endfor %}
+        </td>
+        <td>
+          {% for tag in release[1][tags_attr] %}
+            {{ tag }}&nbsp;
+          {% endfor %}
+        </td>
+        <td>
+          <a href="{{ release[1][repo_url_attr] }}" target="_blank">
+            {{ release[1][repo_url_attr] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
+          </a>
+        </td>
+        <td>
+          {{ site.data.administrations[admin_code].order | capitalize }}
+        </td>
+        <td>
+          {% for language in release[1].languages %}
+            {{ language }}&nbsp;
+          {% endfor %}
+        </td>
+        <td>
+          {% for relatedCode in release[1].relatedCode %}
+            <a href= "{{ relatedCode[url_attr] }}">{{ relatedCode[name_attr] }}</a>
+          {% endfor %}
+        </td>
+        <td>
+          {{ release[1].status }}&nbsp;
+        </td>
+        <td>
+          {{ release[1].vcs }}&nbsp;
+        </td>
+        <td>
+          {{ release[1].version }}&nbsp;
+        </td>
+        <td>
+          {{ release[1].date.created }}&nbsp;
+        </td>
+        <td>
+          {{ release[1].date.metadataLastUpdated }}&nbsp;
+        </td>
+      </tr>
       {% endfor %}
 
     </tbody>
@@ -247,85 +162,64 @@
 
 
 <!-- Modal Lightboxes -->
-{% for fptms in site.data.code %}
-  {% assign fptm = fptms[1] %}
-  {% for admins in fptm %}
-    {% assign admin = admins[1] %}
-    {% for release in admin.releases %}
-      <section id="{{ release.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
-        <header class="modal-header">
-          <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
-        </header>
-        <div class="modal-body">
-          <p><strong>{{ release.description[page.lang] }}</strong></p>
-          <p>{{ site.LevelOfGovernment[page.lang] }}: {{fptms[0] | capitalize}}</p>
-          {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
-          {% if aName[0].name[page.lang] != nil %}
-            <p>Administration: {{ aName[0].name[page.lang] }}</p>
-          {% endif %}
-          
-          {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
-          {% if aName[0].name[page.lang] != nil %}
-            <p>Administration: {{ aName[0].name[page.lang] }}</p>
-          {% endif %}
-          
-          {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
-          {% if aName[0].name[page.lang] != nil %}
-            <p>Administration: {{ aName[0].name[page.lang] }}</p>
-          {% endif %}
+{% for release in site.data.code %}
+  <section id="{{ release[1][name_attr] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+    <header class="modal-header">
+      <h2 class="modal-title">{{ release[1][name_attr] }}</h2>
+    </header>
+    <div class="modal-body">
+      {% assign admin = release[1].adminCode  %}
+      <p><strong>{{ release[1][description_attr] }}</strong></p>
+      <p>{{ site.LevelOfGovernment[page.lang] }}: {{ site.data.administrations[admin].order | capitalize }}</p>
+      <p>Administration: {{ site.data.administrations[admin][name_attr] }}</p>
 
-        {% if release.organization[page.lang] != nil %}
-          <p>{{ site.Organization[page.lang] }}: {{ release.organization[page.lang] }}</p>
-        {% endif %}
-        <p>Source code:
-          <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
-              {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
-          </a>
-        </p>
-        <p>{{ site.License[page.lang] }}(s):
-          {% for license in release.licenses %}
-            <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
-          {% endfor %}
-        </p>
-        <p>{{ site.Tag[page.lang] }}(s): 
-          {% for tag in release.tags[page.lang] %}
-            {{ tag }}
-          {% endfor %}
-        </p>
-        <p>{{ site.CodeLanguage[page.lang] }}(s): 
-          {% for langauge in release.languages %}
-            {{ langauge }}
-          {% endfor %}
-        </p>
-        {% if release.status != nil %}
-          <p>{{ site.Status[page.lang] }}: {{ release.status }}</p>
-        {% endif %}
-        {% if release.vcs != nil %}
-          <p>Version Control System: {{ release.vcs }}</p>
-        {% endif %}
-        {% if release.version != nil %}
-          <p>Version: {{ release.version }}</p>
-        {% endif %}
-        <p>{{ site.CodeCreated[page.lang] }}: {{ release.date.created }}</p>
-        <p>{{ site.LastUpdatedCode[page.lang] }}: {{ release.date.metadataLastUpdated }}</p>
+      <p>Source code:
+        <a href="{{ release[1][repo_url_attr] }}" target="_blank">
+            {{ release[1][repo_url_attr] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
+        </a>
+      </p>
+    <p>{{ site.License[page.lang] }}(s):
+      {% for license in release[1].licenses %}
+        <a href="{{ license[url_attr] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
+      {% endfor %}
+    </p>
+    <p>{{ site.Tag[page.lang] }}(s): 
+      {% for tag in release[1][tags_attr] %}
+        {{ tag }}
+      {% endfor %}
+    </p>
+    <p>{{ site.CodeLanguage[page.lang] }}(s): 
+      {% for language in release[1].languages %}
+        {{ language }}
+      {% endfor %}
+    </p>
+    {% if release[1].status != nil %}
+      <p>{{ site.Status[page.lang] }}: {{ release[1].status }}</p>
+    {% endif %}
+    {% if release[1].vcs != nil %}
+      <p>Version Control System: {{ release[1].vcs }}</p>
+    {% endif %}
+    {% if release[1].version != nil %}
+      <p>Version: {{ release[1].version }}</p>
+    {% endif %}
+    <p>{{ site.CodeCreated[page.lang] }}: {{ release[1].created }}</p>
+    <p>{{ site.LastUpdatedCode[page.lang] }}: {{ release[1].metadataLastUpdated }}</p>
 
-        <h3>Contact</h3>
-        {% if release.contact.name != nil %}
-          <p>{{ release.contact.name }}</p>
-        {% endif %}
-        {% if release.contact.phone != nil %}
-          <p>{{ site.ContactPhoneCode[page.lang] }}: {{ release.contact.phone }}</p>
-        {% endif %}
-        {% if release.contact.email != nil %}
-          <p><a href="mailto:{{ release.contact.email }}" target="_blank">{{ release.contact.email }}</a></p>
-        {% endif %}
-        {% if release.contact.URL != nil %}
-          <p><a href="{{ release.contact.URL[page.lang] }}" target="_blank">{{ release.contact.URL[page.lang] }}</a></p>
-        {% endif %}
-        </div>
-      </section>
-    {% endfor %}
-  {% endfor %}
+    <h3>Contact</h3>
+    {% if release[1].contactName != nil %}
+      <p>{{ release[1].contactName }}</p>
+    {% endif %}
+    {% if release[1].contactPhone != nil %}
+      <p>{{ site.ContactPhoneCode[page.lang] }}: {{ release[1].contactPhone }}</p>
+    {% endif %}
+    {% if release[1].contactEmail != nil %}
+      <p><a href="mailto:{{ release[1].contactEmail }}" target="_blank">{{ release[1].contactEmail }}</a></p>
+    {% endif %}
+    {% if release[1][contact_url_attr] != nil %}
+      <p><a href="{{ release[1][contact_url_attr] }}" target="_blank">{{ release[1][contact_url_attr] }}</a></p>
+    {% endif %}
+    </div>
+  </section>
 {% endfor %}
 
 </div>
