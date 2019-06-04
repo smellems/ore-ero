@@ -3,7 +3,6 @@ contactEmail: media@cse-cst.gc.ca
 contactURL_en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/issues'
 contactURL_fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/issues'
 created: '2016-02-28'
-lastModified: ''
 metadataLastUpdated: '2019-01-31'
 description_en: >-
   Learning environment that aims in helping students learn the basis of assembly
@@ -16,7 +15,6 @@ languages:
   - Python
 name_en: Spartacus
 name_fr: Spartacus
-partners: []
 licenses:
   - spdxID: GPL-2.0
     url_en: >-
@@ -25,7 +23,6 @@ licenses:
       https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
 repoURL_en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus'
 repoURL_fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus'
-relatedCode: []
 tags_en:
   - Learning
   - Assembly programming

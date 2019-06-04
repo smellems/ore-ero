@@ -2,7 +2,6 @@ adminCode: tbs-sct
 contactEmail: Christopher.Jaja@tbs-sct.gc.ca
 contactName: Christopher Jaja
 created: '2013-09-08'
-lastModified: ''
 metadataLastUpdated: '2018-03-26'
 description_en: 'Easy, shareable custom CKAN schemas'
 description_fr: '~'
@@ -12,7 +11,6 @@ name_en: ckanext-scheming
 name_fr: ckanext-scheming
 organization_en: Open Government
 organization_fr: Gouvernement Ouvert
-partners: []
 licenses:
   - spdxID: MIT
     url_en: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING'

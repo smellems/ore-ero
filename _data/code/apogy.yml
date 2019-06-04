@@ -3,7 +3,6 @@ contactEmail: apogy-dev@eclipse.org
 contactURL_en: 'https://projects.eclipse.org/projects/technology.apogy/contact'
 contactURL_fr: 'https://projects.eclipse.org/projects/technology.apogy/contact'
 created: '2015-09-28'
-lastModified: ''
 metadataLastUpdated: '2019-01-31'
 description_en: 'The one-stop-shop solution for operating robots, satellites and beyond'
 description_fr: Un logiciel polyvalent pour faire fonctionner des robots et des satellites
@@ -11,14 +10,12 @@ languages:
   - Java
 name_en: Apogy
 name_fr: Apogy
-partners: []
 licenses:
   - spdxID: EPL-1.0
     url_en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
     url_fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
 repoURL_en: 'https://git.eclipse.org/c/apogy/apogy.git'
 repoURL_fr: 'https://git.eclipse.org/c/apogy/apogy.git'
-relatedCode: []
 tags_en:
   - Robots
   - Space

@@ -1,7 +1,6 @@
 adminCode: tbs-sct
 contactEmail: sebastien.lemay@canada.ca
 created: '2017-12-31'
-lastModified: Invalid date
 metadataLastUpdated: '2019-03-06'
 description_en: This Website and all the data.
 description_fr: Ce site Web et toutes les données.
@@ -19,7 +18,6 @@ licenses:
     url_fr: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
 repoURL_en: 'https://github.com/canada-ca/ore-ero'
 repoURL_fr: 'https://github.com/canada-ca/ore-ero'
-relatedCode: []
 tags_en:
   - Website
   - Data

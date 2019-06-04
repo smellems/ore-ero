@@ -2,7 +2,6 @@ adminCode: tbs-sct
 contactEmail: Christopher.Jaja@tbs-sct.gc.ca
 contactName: Christopher Jaja
 created: '2016-06-05'
-lastModified: Invalid date
 metadataLastUpdated: '2019-06-04'
 description_en: Store CKAN resources against multiple cloud providers.
 description_fr: Stocker les ressources CKAN contre plusieurs fournisseurs infonuagique.
@@ -12,7 +11,6 @@ name_en: ckanext-cloudstorage
 name_fr: ckanext-cloudstorage
 organization_en: Open Government
 organization_fr: Gouvernement Ouvert
-partners: []
 licenses:
   - spdxID: MIT
     url_en: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING'

@@ -1,7 +1,6 @@
 adminCode: cse-cst
 contactEmail: assemblyline@cse-cst.gc.ca
 created: '2016-12-21'
-lastModified: ''
 metadataLastUpdated: '2019-01-31'
 description_en: >-
   Platform for the analysis of malicious files. It is designed to assist cyber
@@ -15,7 +14,6 @@ languages:
   - Python
 name_en: Assemblyline
 name_fr: Assemblyline
-partners: []
 licenses:
   - spdxID: MIT
     url_en: >-
@@ -24,7 +22,6 @@ licenses:
       https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default
 repoURL_en: 'https://bitbucket.org/cse-assemblyline/assemblyline'
 repoURL_fr: 'https://bitbucket.org/cse-assemblyline/assemblyline'
-relatedCode: []
 tags_en:
   - Malware detection
   - File analysis

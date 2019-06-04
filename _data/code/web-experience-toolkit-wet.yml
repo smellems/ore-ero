@@ -1,7 +1,6 @@
 adminCode: tbs-sct
 contactEmail: wet-boew@tbs-sct.gc.ca
 created: '2013-08-11'
-lastModified: ''
 metadataLastUpdated: '2019-01-31'
 description_en: >-
   Building websites that are accessible, usable, interoperable, mobile friendly
@@ -13,15 +12,12 @@ languages:
   - '~'
 name_en: Web Experience Toolkit (WET)
 name_fr: Boîte à outils de l’expérience Web (BOEW)
-partners: []
 licenses:
   - spdxID: MIT
     url_en: 'https://github.com/wet-boew/wet-boew/blob/master/License-en.txt'
     url_fr: 'https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt'
 repoURL_en: 'https://github.com/wet-boew/wet-boew'
 repoURL_fr: 'https://github.com/wet-boew/wet-boew'
-relatedCode:
-  - {}
 tags_en:
   - Frontend
   - Website
