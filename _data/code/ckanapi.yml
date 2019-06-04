@@ -1,0 +1,32 @@
+adminCode: tbs-sct
+contactEmail: Christopher.Jaja@tbs-sct.gc.ca
+contactName: Christopher Jaja
+created: '2013-04-07'
+lastModified: ''
+metadataLastUpdated: '2018-03-26'
+description_en: Command line interface and Python module for accessing the CKAN Action API
+description_fr: '~'
+languages:
+  - Python
+name_en: ckanapi
+name_fr: ckanapi
+organization_en: Open Government
+organization_fr: Gouvernement Ouvert
+partners: []
+licenses:
+  - spdxID: MIT
+    url_en: 'https://github.com/ckan/ckanapi/blob/master/COPYING'
+    url_fr: 'https://github.com/ckan/ckanapi/blob/master/COPYING.fr'
+repoURL_en: 'https://github.com/ckan/ckanapi'
+repoURL_fr: 'https://github.com/ckan/ckanapi'
+relatedCode:
+  - relatedCodeName_en: CKAN
+    relatedCodeName_fr: CKAN
+    relatedCodeURL_en: 'https://github.com/ckan/ckan'
+    relatedCodeURL_fr: 'https://github.com/ckan/ckan'
+tags_en:
+  - CKAN Tool
+tags_fr:
+  - Outil CKAN
+vcs: git
+status: Production

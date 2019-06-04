@@ -1,0 +1,26 @@
+adminCode: esdc-edsc
+contactEmail: calvin.rodo@hrsdc-rhdcc.gc.ca
+created: '2019-02-13'
+lastModified: ''
+metadataLastUpdated: '2019-02-21'
+description_en: A dashboard to show expose metrics on software projects at ESDC
+description_fr: >-
+  Un tableau de bord pour afficher les métriques d'exposition sur les projets
+  logiciels d'EDSC
+downloadURL_en: ''
+languages:
+  - '~'
+name_en: AppHub
+name_fr: HubApp
+partners: []
+licenses:
+  - spdxID: MIT
+    url_en: 'https://github.com/esdc-devx/AppHub/blob/master/LICENSE'
+    url_fr: 'https://github.com/esdc-devx/AppHub/blob/master/LICENSE'
+repoURL_en: 'https://github.com/esdc-devx/AppHub'
+repoURL_fr: 'https://github.com/esdc-devx/AppHub'
+relatedCode: []
+tags_en:
+  - Dashboard
+tags_fr:
+  - Tableau de bord

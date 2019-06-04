@@ -1,0 +1,32 @@
+adminCode: tbs-sct
+contactEmail: gcconnex@tbs-sct.gc.ca
+created: '2014-08-21'
+lastModified: ''
+metadataLastUpdated: '2019-01-31'
+description_en: GC digital collaboration platform (GCconnex and GCcollab)
+description_fr: Plateforme de collaboration numérique du GC (GCconnex and GCcollab)
+downloadURL_en: ''
+languages:
+  - PHP
+  - MySQL
+name_en: GCconnex
+name_fr: GCconnex
+organization_en: Digital Enablement Division
+organization_fr: Division de la mobilisation numérique
+partners: []
+licenses:
+  - spdxID: GPL-2.0
+    url_en: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
+    url_fr: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
+repoURL_en: 'https://github.com/gctools-outilsgc/gcconnex'
+repoURL_fr: 'https://github.com/gctools-outilsgc/gcconnex'
+relatedCode:
+  - relatedCodeName_en: Elgg
+    relatedCodeURL_en: 'https://github.com/Elgg/Elgg'
+tags_en:
+  - Collaboration
+  - Social
+tags_fr:
+  - Collaboration
+  - Social
+vcs: git

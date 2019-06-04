@@ -1,0 +1,32 @@
+adminCode: eccc
+contactEmail: metro-users@framalistes.org
+created: '2006-08-28'
+lastModified: ''
+metadataLastUpdated: '2019-01-31'
+description_en: >-
+  The Model of the Environment and Temperature of Roads (METRo) is a road
+  forecast software.
+description_fr: >-
+  Le Modèle de l'Environnement et de la Température de la Route (METRo) est un
+  logiciel de prévision de la température de la route.
+languages:
+  - Python
+name_en: METRo
+name_fr: METRo
+partners: []
+licenses:
+  - spdxID: GPL-2.0
+    url_en: 'https://framagit.org/metroprojects/metro/blob/master/LICENSE'
+    url_fr: 'https://framagit.org/metroprojects/metro/blob/master/LICENSE'
+repoURL_en: 'https://framagit.org/metroprojects/metro'
+repoURL_fr: 'https://framagit.org/metroprojects/metro'
+relatedCode: []
+tags_en:
+  - Environment
+  - Temperature
+  - Roads
+tags_fr:
+  - Environnement
+  - Température
+  - Routes
+vcs: git
