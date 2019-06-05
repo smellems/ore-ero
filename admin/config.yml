@@ -4,6 +4,7 @@ backend:
   branch: netlify
   base_url: https://ore-ero-auth.herokuapp.com
 media_folder: "assets/uploads"
+publish_mode: editorial_workflow
 collections:
   - name: "administrations"
     label: "Administrations"
