@@ -6,7 +6,7 @@ contactURL_en: 'https://github.com/yeg-relief/youcanbenefit/issues'
 contactURL_fr: 'https://github.com/yeg-relief/youcanbenefit/issues'
 created: '2016-06-16'
 lastModified: '2019-05-28'
-metadataLastUpdated: '2019-05-31'
+metadataLastUpdated: '2019-06-05'
 description_en: >-
   YouCanBenefit is a web application that increases social benefit program
   discoverability for people of lesser means and their allies.
@@ -14,6 +14,8 @@ description_fr: >-
   YouCanBenefit est une application Web qui augmente la découvrabilité des
   programmes d''avantages sociaux pour les personnes moins fortunées et leurs
   alliés.
+homepageURL_en: 'https://youcanbenefit.edmonton.ca/home'
+homepageURL_fr: 'https://youcanbenefit.edmonton.ca/home'
 languages:
   - JavaScript
   - TypeScript
